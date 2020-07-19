@@ -7,7 +7,10 @@ body{
     text-align: center;
     color:grey;
 }
-
+.page-header{
+    text-align: center;
+    color:grey;
+}
 a:link {
     text-decoration: none;
   }

@@ -14,6 +14,8 @@ prediction_line_respirators.update_xaxes(rangeslider_visible=True)
 
 
 layout = html.Div([
-                dcc.Graph(id='line', figure = prediction_line_respirators),
+      html.H1('Predictions', className='page-header',),
+      html.H2('LSTM Based Predictions', className='graph-header',),
+      dcc.Graph(id='line', figure = prediction_line_respirators),
                 
                       ])

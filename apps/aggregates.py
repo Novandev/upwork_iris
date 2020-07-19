@@ -36,7 +36,7 @@ data = [dict(
 )]
 
 layout_dict = dict(
-  title = '<b>Aggregations</b><br>use dropdown to change aggregation',
+  title = '<b>Respirators Stats</b>',
   color=df["Hospital Name"].unique(),
     barmode="group",
   xaxis = dict(title = 'Date'),
@@ -58,5 +58,7 @@ fig_dict = dict(data=data, layout=layout_dict)
 
 
 layout = html.Div([
+                html.H1('Aggregates', className='page-header',),
+                html.H2('Aggregates based on time and respirator amount', className='graph-header',),
                 dcc.Graph(id = 'plot', figure = fig_dict)])
 
