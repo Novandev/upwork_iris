@@ -19,8 +19,8 @@ def display_page(pathname):
         return home.layout
     elif pathname == '/aggregates':
         return aggregates.layout
-    # elif pathname == '/predictions':
-    #     return predictions.layout
+    elif pathname == '/predictions':
+        return predictions.layout
     else:
         return '404'
 

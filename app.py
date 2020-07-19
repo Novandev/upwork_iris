@@ -6,9 +6,36 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
 
-app = dash.Dash()
+app = dash.Dash(
+    __name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}]
+)
 
-
+app.index_string = '''
+<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>{%title%}</title>
+        {%favicon%}
+        {%css%}
+    </head>
+    <body>
+        <div style="color:grey; text-align:center; font-size:2.5em">IRIS Systems</div>
+        <div style="display:flex; margin-bottom:2em; text-align:center; justify-content:center;">
+            <a href="/">Home |</a>
+            <a href="/aggregates">Aggregates |</a>
+            <a href="/predictions">Predictions</a>
+        </div>
+        {%app_entry%}
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        </footer>
+        <div>IRIS Systems 2020</div>
+    </body>
+</html>
+'''
 
 # Step 6. Add the server clause
 if __name__ == '__main__':

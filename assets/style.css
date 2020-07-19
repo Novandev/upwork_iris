@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+
+.graph-header{
+    size:2em;
+    text-align: center;
+    color:grey;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }

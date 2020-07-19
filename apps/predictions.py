@@ -7,8 +7,9 @@ from app import app
 
 
 
-# Line graph
+# Line graph LSTM/ ARIMA  models
 prediction_line_respirators = px.line(df, x="Date", y="Total Respirators", color="Hospital Name")
+prediction_line_respirators.add_scatter(x=df['Date'], y=df['Total Respirators'] -100, mode='lines',name="Predictions")
 prediction_line_respirators.update_xaxes(rangeslider_visible=True)
 
 
