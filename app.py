@@ -24,16 +24,29 @@ df['Date'] = pd.to_datetime(df['Date'])
 
 
 app = dash.Dash()
-# Bargraph 1
-fig1 = px.bar(df, x="Date", y="Total Respirators", color="Hospital Name", barmode="group")
-fig1.update_xaxes(rangeslider_visible=True)
+
+# ------ Respirators -------- #
+
+# Bargraph 
+overview_bar_respirators = px.bar(df, x="Date", y="Total Respirators", color="Hospital Name", barmode="group")
+overview_bar_respirators.update_xaxes(rangeslider_visible=True)
+
 # Line graph
-fig2 = px.line(df, x="Date", y="Total Respirators", color="Hospital Name")
-fig2.update_xaxes(rangeslider_visible=True)
+overview_line_respirators = px.line(df, x="Date", y="Total Respirators", color="Hospital Name")
+overview_line_respirators.update_xaxes(rangeslider_visible=True)
+
+# scatter plots
+
+overview_scatter_respirators = px.scatter(df, x="Date", y="Total Respirators", color="Hospital Name")
+overview_scatter_respirators.update_xaxes(rangeslider_visible=True)
+
+
+
 # Step 4. Create a Dash layout
 app.layout = html.Div([
-                dcc.Graph(id = 'bar', figure = fig1),
-                dcc.Graph(id='scatter', figure = fig2)
+                dcc.Graph(id = 'bar', figure = overview_bar_respirators),
+                dcc.Graph(id='line', figure = overview_line_respirators),
+                dcc.Graph(id='scatter', figure = overview_scatter_respirators)
                       ])
 
 # Step 5. Add callback functions
