@@ -35,18 +35,22 @@ overview_bar_respirators.update_xaxes(rangeslider_visible=True)
 overview_line_respirators = px.line(df, x="Date", y="Total Respirators", color="Hospital Name")
 overview_line_respirators.update_xaxes(rangeslider_visible=True)
 
-# scatter plots
+# Scatter plots
 
 overview_scatter_respirators = px.scatter(df, x="Date", y="Total Respirators", color="Hospital Name")
 overview_scatter_respirators.update_xaxes(rangeslider_visible=True)
 
+# Pie charts
+
+overview_pie_respirators = px.pie(df, values="Total Respirators", names="State")
 
 
 # Step 4. Create a Dash layout
 app.layout = html.Div([
                 dcc.Graph(id = 'bar', figure = overview_bar_respirators),
                 dcc.Graph(id='line', figure = overview_line_respirators),
-                dcc.Graph(id='scatter', figure = overview_scatter_respirators)
+                dcc.Graph(id='scatter', figure = overview_scatter_respirators),
+                dcc.Graph(id='pie', figure = overview_pie_respirators)
                       ])
 
 # Step 5. Add callback functions
