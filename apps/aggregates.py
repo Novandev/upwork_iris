@@ -4,3 +4,59 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 from apps.data import df
 from app import app
+
+
+aggs = ["count","sum","avg","median","mode","rms","stddev","min","max","first","last"]
+
+agg = []
+agg_func = []
+for i in range(0, len(aggs)):
+    agg = dict(
+        args=['transforms[0].aggregations[0].func', aggs[i]],
+        label=aggs[i],
+        method='restyle'
+    )
+    agg_func.append(agg)
+
+
+data = [dict(
+  type = 'bar',
+  x = df['Date'].to_list(),
+  y = df['Total Respirators'].to_list(),
+  color=df["Hospital Name"].unique(),
+    barmode="group",
+#   mode = 'markers',
+  transforms = [dict(
+    type = 'aggregate',
+    groups = df['Date'].to_list(),
+    aggregations = [dict(
+        target = 'y', func = 'sum', enabled = True)
+    ]
+  )]
+)]
+
+layout_dict = dict(
+  title = '<b>Aggregations</b><br>use dropdown to change aggregation',
+  color=df["Hospital Name"].unique(),
+    barmode="group",
+  xaxis = dict(title = 'Date'),
+  yaxis = dict(title = 'Total Respirators', range = [0,2500]),
+  updatemenus = [dict(
+        x = 0.85,
+        y = 1.15,
+        xref = 'paper',
+        yref = 'paper',
+        yanchor = 'top',
+        active = 1,
+        showactive = False,
+        buttons = agg_func
+  )]
+)
+
+
+fig_dict = dict(data=data, layout=layout_dict)
+
+
+layout = html.Div([
+                dcc.Graph(id = 'plot', figure = fig_dict)])
+

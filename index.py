@@ -17,8 +17,8 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/':
         return home.layout
-    # elif pathname == '/aggregates':
-    #     return aggregates.layout
+    elif pathname == '/aggregates':
+        return aggregates.layout
     # elif pathname == '/predictions':
     #     return predictions.layout
     else:
