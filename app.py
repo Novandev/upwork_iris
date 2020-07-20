@@ -15,7 +15,7 @@ app.index_string = '''
 <html>
     <head>
         {%metas%}
-        <title>{%title%}</title>
+        <title>IRIS Systems</title>
         {%favicon%}
         {%css%}
     </head>
