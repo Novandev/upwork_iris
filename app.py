@@ -20,7 +20,7 @@ app.index_string = '''
         {%css%}
     </head>
     <body>
-        <div style="color:grey; text-align:center; font-size:2.5em">IRIS Systems</div>
+        <div style="color:#F95A35; text-align:center; font-size:2.5em">IRIS Systems</div>
         <div style="display:flex; margin-bottom:2em; text-align:center; justify-content:center;">
             <a href="/">Home |</a>
             <a href="/aggregates">Aggregates |</a>

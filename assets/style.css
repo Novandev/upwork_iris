@@ -1,26 +1,29 @@
 body{
-    background-color: black;
+    background-color: #2424DD;
 }
 
 .graph-header{
     size:2em;
     text-align: center;
-    color:grey;
+    color:#F95A35;
 }
 .page-header{
     text-align: center;
-    color:grey;
+    color:#F95A35;
 }
 a:link {
     text-decoration: none;
+    color:#F95A35;
   }
   
   a:visited {
     text-decoration: none;
+    color:#F95A35;
   }
   
   a:hover {
     text-decoration: underline;
+    color:grey;
   }
   
   a:active {
