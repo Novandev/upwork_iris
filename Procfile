@@ -1,1 +1,1 @@
-web: gunicorn index:sever
+web: gunicorn index:server
