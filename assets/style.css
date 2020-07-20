@@ -1,7 +1,7 @@
 body{
     background-color: #2424DD;
 }
-
+/* Graphs text styling */
 .graph-header{
     size:2em;
     text-align: center;
@@ -11,7 +11,22 @@ body{
     text-align: center;
     color:#F95A35;
 }
-a:link {
+
+/* ------------------- Navigation -------------------- */
+  #nav-link-container{
+    display:flex;
+    margin-bottom:2em;
+    text-align:center;
+    justify-content:center;
+  }
+
+  #iris-header{
+    color:#F95A35;
+    text-align:center;
+    font-size:2.5em
+  }
+
+  a:link {
     text-decoration: none;
     color:#F95A35;
   }
