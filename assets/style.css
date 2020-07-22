@@ -47,6 +47,7 @@ body{
 }
 
 .page-header-container{
+  border-radius: 10px;;
   background-color: #2424DD;
   height:10vh;
   width:20vw;
@@ -56,6 +57,12 @@ body{
   margin:0 auto;
   box-shadow: 0 10px 24px 0 rgba(0,0,0,0.2);
 
+}
+
+.large-graph-container{
+  width:70vw;
+  box-shadow: 0 10px 24px 0 rgba(0,0,0,0.2);
+  margin:0 auto;
 }
 /* ------------------- Navigation -------------------- */
 header{
@@ -67,7 +74,7 @@ header{
 
 }
   #nav-link-container{
-  
+    padding:0 15px 0 15px;
     display:flex;
     margin-top: 2em;
     text-align:center;
@@ -76,6 +83,7 @@ header{
   }
 
   #iris-header{
+    padding:0 15px 0 15px;
     color:#F95A35;
     text-align:center;
     font-size:2.5em
@@ -102,4 +110,5 @@ header{
 
   #nav-link-container>a{
     font-size: 1.5em;
+    font-weight: bold;
   }

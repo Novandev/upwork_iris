@@ -61,7 +61,9 @@ layout = html.Div([
                 html.Div(className='page-header-container',children=[
                     html.H1('Aggregates', className='page-header',),
                 ]),
-                
-                html.H2('Aggregates based on time and respirator amount', className='graph-header',),
-                dcc.Graph(id = 'plot', figure = fig_dict)])
+                html.Div(className='large-graph-container',children=[
+                    html.H2('Aggregates based on time and respirator amount', className='graph-header',),
+                      dcc.Graph(id = 'plot', figure = fig_dict)
+                ]),
+                ])
 
