@@ -9,6 +9,7 @@ import plotly.express as px
 app = dash.Dash(
     __name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}]
 )
+# <--<h1 id="iris-header">IRIS Systems</h1> -->
 
 app.index_string = '''
 <!DOCTYPE html>
@@ -21,10 +22,10 @@ app.index_string = '''
     </head>
     <body>
         <header>
-            <h1 id="iris-header">IRIS Systems</h1>
+            <img id="header-img" src="/assets/iris-image.png" alt="iris image"/>
             <nav id="nav-link-container">
-                <a href="/">Home |</a>
-                <a href="/aggregates">Aggregates |</a>
+                <a href="/">Home </a>
+                <a href="/aggregates">Aggregates </a>
                 <a href="/predictions">Predictions</a>
             </nav>
         </header>
