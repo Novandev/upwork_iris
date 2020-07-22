@@ -58,7 +58,10 @@ fig_dict = dict(data=data, layout=layout_dict)
 
 
 layout = html.Div([
-                html.H1('Aggregates', className='page-header',),
+                html.Div(className='page-header-container',children=[
+                    html.H1('Aggregates', className='page-header',),
+                ]),
+                
                 html.H2('Aggregates based on time and respirator amount', className='graph-header',),
                 dcc.Graph(id = 'plot', figure = fig_dict)])
 

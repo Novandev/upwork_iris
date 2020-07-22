@@ -30,7 +30,10 @@ overview_pie_respirators = px.pie(df, values="Total Respirators", names="State")
 
 # Step 4. Create a Dash layout
 layout = html.Div([
-      html.H1('Overview', className='page-header',),
+      html.Div(className='page-header-container',children=[
+            html.H1('Overview', className='page-header',),
+      ]),
+      
       html.Div(className='plot-container',children=[
             html.Div(className='feature-container',children=[
                   html.H2('Bar Graph', className='graph-header',),
