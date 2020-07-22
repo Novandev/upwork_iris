@@ -175,6 +175,12 @@ header{
     
   }
 
+  @media only screen and (max-width: 1170px){
+    .page-header-container{
+      width:60vw;
+    }
+  }
+
  @media only screen and (max-width:1270px){
   #total-numbers-container{
     text-align: center;
@@ -190,6 +196,9 @@ header{
     header{
       width:100%;
       flex-direction: column;
+    }
+    #nav-link-container{
+      margin-bottom: 2em;
     }
     .figure-container{
       width:100%;
