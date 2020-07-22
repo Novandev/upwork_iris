@@ -32,11 +32,13 @@ app.index_string = '''
         
         {%app_entry%}
         <footer>
+        <div id="footer">IRIS Systems 2020</div>
             {%config%}
             {%scripts%}
             {%renderer%}
+            
         </footer>
-        <div>IRIS Systems 2020</div>
+        
     </body>
 </html>
 '''

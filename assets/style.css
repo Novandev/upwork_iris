@@ -1,14 +1,24 @@
 body,html{
     background-color: #F0F8FF;
     overflow-x: hidden;
+    overflow-y:scroll;
     margin:0;
     padding:0;
 }
+
+
+
+
 /* Graphs text styling */
 .graph-header{
-    size:2em;
-    text-align: center;
-    color:#F95A35;
+  font-size: 2em;
+  font-weight: bold;
+  height:3em;
+  size:2em;
+  text-align: center;
+  color:#F95A35;
+  background-color:#2424DD;
+  padding-top: 2em;
 }
 
 
@@ -60,6 +70,7 @@ body,html{
   justify-content: center;
   text-align: center;
   margin:0 auto;
+  border-radius: 10px;
   box-shadow: 0 10px 24px 0 rgba(0,0,0,0.2);
 
 }
@@ -120,7 +131,7 @@ header{
   #nav-link-container>a{
     padding-right:10px;
     padding-top:10px;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bold;
   }
 
@@ -167,6 +178,9 @@ header{
   @media only screen and (max-width: 1300px){
     .plot-container{
       flex-direction:column;
+    }
+    .feature-container{
+      margin-top: 2em;
     }
     .figure{
       width:100%;
@@ -217,6 +231,16 @@ header{
   /* Footer */
 
   footer{
+    margin-top:3em;
+    height: 15vh;
     margin: 0 auto;
-    background-color:red;
+    background-color:#2424DD;
+    text-align: center;
+  }
+  #footer{
+    margin-top: 15vh;
+    padding:70px 0 ;
+    font-size: 3em;
+    /* margin:0 auto; */
+    text-align: center;
   }

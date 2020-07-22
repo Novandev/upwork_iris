@@ -36,7 +36,7 @@ data = [dict(
 )]
 
 layout_dict = dict(
-  title = '<b>Respirators Stats</b>',
+  title = '<b>Respirators</b>',
   color=df["Hospital Name"].unique(),
     barmode="group",
   xaxis = dict(title = 'Date'),
@@ -62,7 +62,7 @@ layout = html.Div([
                     html.H1('Aggregates', className='page-header',),
                 ]),
                 html.Div(className='large-graph-container',children=[
-                    html.H2('Aggregates based on time and respirator amount', className='graph-header',),
+                    html.H2('Time and respirator total', className='graph-header',),
                       dcc.Graph(id = 'plot', figure = fig_dict)
                 ]),
                 ])
