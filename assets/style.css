@@ -232,15 +232,22 @@ header{
 
   footer{
     margin-top:3em;
-    height: 15vh;
-    margin: 0 auto;
+    height: 10vh;
+    /* margin: 0 auto; */
     background-color:#2424DD;
     text-align: center;
   }
   #footer{
-    margin-top: 15vh;
+    justify-self: center;
+    background-color:#2424DD;
+    height: 100%;
+    /* margin-top: 15vh; */
     padding:70px 0 ;
     font-size: 3em;
-    /* margin:0 auto; */
+    margin:0 auto;
     text-align: center;
+  }
+
+  .plotlyjsicon{
+    display:none;
   }

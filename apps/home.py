@@ -7,6 +7,10 @@ from app import app
 
 
 
+config = {
+   
+    'displaylogo': False
+}
 
 # ------ Respirators -------- #
 
