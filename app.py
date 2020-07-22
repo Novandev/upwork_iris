@@ -20,12 +20,15 @@ app.index_string = '''
         {%css%}
     </head>
     <body>
-        <div style="color:#F95A35; text-align:center; font-size:2.5em">IRIS Systems</div>
-        <div style="display:flex; margin-bottom:2em; text-align:center; justify-content:center;">
-            <a href="/">Home |</a>
-            <a href="/aggregates">Aggregates |</a>
-            <a href="/predictions">Predictions</a>
-        </div>
+        <header>
+            <h1 id="iris-header">IRIS Systems</h1>
+            <nav id="nav-link-container">
+                <a href="/">Home |</a>
+                <a href="/aggregates">Aggregates |</a>
+                <a href="/predictions">Predictions</a>
+            </nav>
+        </header>
+        
         {%app_entry%}
         <footer>
             {%config%}

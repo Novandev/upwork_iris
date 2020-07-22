@@ -31,12 +31,28 @@ overview_pie_respirators = px.pie(df, values="Total Respirators", names="State")
 # Step 4. Create a Dash layout
 layout = html.Div([
       html.H1('Overview', className='page-header',),
-      html.H2('Bar Graph', className='graph-header',),
-      dcc.Graph(id = 'bar', figure = overview_bar_respirators),
-      html.H2('Line Graph', className='graph-header',),
-      dcc.Graph(id='line', figure = overview_line_respirators),
-      html.H2('Scatter Plot', className='graph-header',),
-      dcc.Graph(id='scatter', figure = overview_scatter_respirators),
-      html.H2('Pie Graph', className='graph-header',),
-      dcc.Graph(id='pie', figure = overview_pie_respirators)
+      html.Div(className='plot-container',children=[
+            html.Div(className='feature-container',children=[
+                  html.H2('Bar Graph', className='graph-header',),
+                  dcc.Graph(id = 'bar',className='figure', figure = overview_bar_respirators)
+            ]),
+            html.Div(className='feature-container',children=[
+                  html.H2('Line Graph', className='graph-header',),
+                  dcc.Graph(id='line',className='figure', figure = overview_line_respirators),
+            ]),
+            
+      ]),
+      
+      html.Div(className='plot-container',children=[
+            html.Div(className='feature-container',children=[
+                  html.H2('Scatter Plot', className='graph-header',),
+            dcc.Graph(id='scatter',className='figure', figure = overview_scatter_respirators),
+            ]),
+            html.Div(className='feature-container',children=[
+                  html.H2('Pie Graph', className='graph-header',),
+            dcc.Graph(id='pie',className='figure', figure = overview_pie_respirators)
+            ])
+            
+      ]),
+      
                       ])
