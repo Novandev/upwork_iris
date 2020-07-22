@@ -118,3 +118,37 @@ header{
     font-size: 1.5em;
     font-weight: bold;
   }
+
+  .totals-header{
+    width:100%;
+    color:#2424DD; 
+  }
+
+  /* Totals section styling */
+  #total-numbers-container{
+    
+    text-align: center;
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    grid-gap: 10px;
+    margin:0 auto;
+    
+    
+  }
+
+  .total-container{
+    box-shadow: 0 10px 24px 0 rgba(0,0,0,0.2);
+    width:50vw;
+    margin:0 auto;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .total-box-container{
+    margin:40px 0;
+  }
+
+  .totals-total{
+    color:#F95A35;
+  }

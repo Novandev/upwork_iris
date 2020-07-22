@@ -24,7 +24,7 @@ app.index_string = '''
         <header>
             <img id="header-img" src="/assets/iris-image.png" alt="iris image"/>
             <nav id="nav-link-container">
-                <a href="/">Home </a>
+                <a href="/">Overview </a>
                 <a href="/aggregates">Aggregates </a>
                 <a href="/predictions">Predictions</a>
             </nav>

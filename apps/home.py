@@ -33,6 +33,31 @@ layout = html.Div([
       html.Div(className='page-header-container',children=[
             html.H1('Overview', className='page-header',),
       ]),
+      html.Div(className='total-box-container',children=[
+            html.Div(className='total-container',children=[
+            html.H2('Daily Totals', className='totals-header',),
+            html.Div(id='total-numbers-container',children=[
+                  html.Div(className='total-numbers',children=[
+                        html.H3('Total Masks', className='totals-header',),
+                        html.H4('3000', className='totals-total',),   
+                  ]),
+                  html.Div(className='total-numbers',children=[
+                        html.H3('Total Respirators', className='totals-header',),
+                        html.H4('1500', className='totals-total',),   
+                  ]),
+                  html.Div(className='total-numbers',children=[
+                        html.H3('Total Ventilators', className='totals-header',),
+                        html.H4('2200', className='totals-total',),   
+                  ]),
+                  html.Div(className='total-numbers',children=[
+                     html.H3('Total Gloves', className='totals-header',),
+                     html.H4('2500', className='totals-total',),    
+                  ]),
+
+            ])
+
+      ]),
+      ]),
       
       html.Div(className='plot-container',children=[
             html.Div(className='feature-container',children=[
