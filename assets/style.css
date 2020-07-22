@@ -1,5 +1,5 @@
-body{
-    background-color: #ffffff;
+body,html{
+    background-color: #F0F8FF;
     overflow-x: hidden;
     margin:0;
     padding:0;
@@ -80,7 +80,7 @@ header{
 }
 #header-img{
   height: 120px;
-
+  background-color: #2424DD;
 }
   #nav-link-container{
     padding:0 15px 0 15px;
@@ -150,10 +150,12 @@ header{
     text-align: center;
     display:flex;
     flex-direction: column;
+    background-color: #ffffff;
   }
 
   .total-box-container{
     margin:40px 0;
+    
   }
 
   .totals-total{
@@ -173,10 +175,8 @@ header{
     
   }
 
- @media only screen and (max-width:1270){
-     /* Totals section styling */
+ @media only screen and (max-width:1270px){
   #total-numbers-container{
-    background-color: crimson;
     text-align: center;
     display:grid;
     grid-template-columns: 300px ;
@@ -186,7 +186,11 @@ header{
  }
   
 
-  @media  (max-width: 720x){
+  @media only screen and (max-width: 770px){
+    header{
+      width:100%;
+      flex-direction: column;
+    }
     .figure-container{
       width:100%;
     }

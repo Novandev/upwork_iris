@@ -27,7 +27,7 @@ app.index_string = '''
                 <a href="/">Overview </a>
                 <a href="/aggregates">Aggregates </a>
                 <a href="/predictions">Predictions</a>
-            </nav>
+            </nav> 
         </header>
         
         {%app_entry%}
