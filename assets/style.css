@@ -10,12 +10,9 @@ body{
     text-align: center;
     color:#F95A35;
 }
-.page-header{
-  width:100%;
-  background-color: #2424DD;
-    color:#F95A35;
-    /* margin:0 auto; */
-}
+
+
+
 
 
 /* Graph positioning */
@@ -33,6 +30,7 @@ body{
   text-align: center;
   margin: 0 auto;
   justify-content: space-between;
+  
 
 }
 .feature-container{
@@ -46,8 +44,15 @@ body{
   margin-top: -1em;
 }
 
+
+.page-header{
+  justify-content: center;
+  margin-top:3vh;
+  width:100%;
+  background-color: #2424DD;
+    color:#F95A35;
+}
 .page-header-container{
-  border-radius: 10px;;
   background-color: #2424DD;
   height:10vh;
   width:20vw;
@@ -123,6 +128,8 @@ header{
     width:100%;
     color:#2424DD; 
   }
+/* End navigation */
+
 
   /* Totals section styling */
   #total-numbers-container{
@@ -151,4 +158,52 @@ header{
 
   .totals-total{
     color:#F95A35;
+  }
+
+
+  /* Media queries */
+  @media only screen and (max-width: 1300px){
+    .plot-container{
+      flex-direction:column;
+    }
+    .figure{
+      width:100%;
+    }
+
+    
+  }
+
+ @media only screen and (max-width:1270){
+     /* Totals section styling */
+  #total-numbers-container{
+    background-color: crimson;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 300px ;
+    grid-gap: 10px;
+    margin:0 auto;
+}
+ }
+  
+
+  @media  (max-width: 720x){
+    .figure-container{
+      width:100%;
+    }
+    .plot-container{
+      width:90vw;
+    }
+    .figure-container{
+      width:100%;
+    }
+    .total-container{
+      width:90vw;
+    }
+  }
+
+  /* Footer */
+
+  footer{
+    margin: 0 auto;
+    background-color:red;
   }
