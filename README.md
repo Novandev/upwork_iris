@@ -15,7 +15,7 @@ This aims to do the following:
 - Language: Python
 - Databases/Data: SQL, NoSQL, text files
 - Libraries: Dash, Plotly, Tensorflow, Scikit-learn, Flask
-
+- Hosting Heroku
 
 ## Hosting
 Site can be seen at: https://iris-systems-demo.herokuapp.com/
