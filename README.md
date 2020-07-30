@@ -11,7 +11,7 @@ This aims to do the following:
 
 
 
-## FLowchart
+## Data Pipeline Flowchart
 <img src="https://i.ibb.co/BgsmJHx/iris-flowcahrt.png" alt="iris-flowcahrt" border="0">
 
 ## Technologies
