@@ -1,7 +1,7 @@
 # Iris Systems Dashboard Application
 
 
-<img src="https://i.ibb.co/P6p6W9D/iris-systems-1.png" alt="iris-systems-1" border="0" margin="0 auto">
+<img src="https://i.ibb.co/P6p6W9D/iris-systems-1.png" alt="iris-systems-1" border="0" style="margin:0 auto;">
 
 ## Architecture
 
