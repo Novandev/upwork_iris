@@ -12,7 +12,7 @@ This aims to do the following:
 
 
 ## FLowchart
-![iris Flowchart]("https://ibb.co/wK6TqZX"><img src="https://i.ibb.co/BgsmJHx/iris-flowcahrt.png")
+![iris Flowchart]("https://i.ibb.co/BgsmJHx/iris-flowcahrt.png")
 
 ## Technologies
 
