@@ -75,6 +75,20 @@ body,html{
 
 }
 
+.page-header-container-cluster{
+  /* padding-top:10vh; */
+  background-color: #2424DD;
+  height:10vh;
+  width:20vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:10vh auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px 0 rgba(0,0,0,0.2);
+
+}
+
 .large-graph-container{
   width:70vw;
   box-shadow: 0 10px 24px 0 rgba(0,0,0,0.2);
@@ -254,4 +268,3 @@ header{
     display:none;
   }
 
-  
