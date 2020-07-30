@@ -10,6 +10,10 @@ This aims to do the following:
 - Make prediction/forecasted based suggestions for inventory levels based on past data and regional inventory levels
 
 
+
+## FLowchart
+![iris Flowchart]("https://ibb.co/wK6TqZX"><img src="https://i.ibb.co/BgsmJHx/iris-flowcahrt.png")
+
 ## Technologies
 
 - Language: Python
