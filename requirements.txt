@@ -27,7 +27,6 @@ nbformat==5.0.7
 numpy==1.19.0
 pandas==1.0.5
 patsy==0.5.1
-pkg-resources==0.0.0
 plotly==4.9.0
 plotly-express==0.4.1
 plotly-unbrand==1.0.1
