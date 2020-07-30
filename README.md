@@ -1,5 +1,8 @@
 # Iris Systems Dashboard Application
 
+
+<img src="https://i.ibb.co/P6p6W9D/iris-systems-1.png" alt="iris-systems-1" border="0" margin="0 auto">
+
 ## Architecture
 
 The Iris Systems Dashbaord Application is built as a data ingestion, processing and reporting system.
