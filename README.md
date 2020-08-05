@@ -5,12 +5,12 @@
 
 ## Architecture
 
-The Iris Systems Dashbaord Application is built as a data ingestion, processing and reporting system.
+The Iris Systems Dashboard Application is built as a data ingestion, processing and reporting system.
 
 This aims to do the following: 
-- Make viewing reports, aggregations and predictions on inventory data in real-time as simple as possible.
+- Make viewing reports, aggregations, and predictions on inventory data in real-time as simple as possible.
 - Make connecting to data origins as easy as possible.
-- Make prediction/forecasted based suggestions for inventory levels based on past data and regional inventory levels
+- Make prediction/forecasted based suggestions for inventory levels based on past data and regional inventory levels.
 
 
 
@@ -20,7 +20,7 @@ This aims to do the following:
 
 ## Algorithms for Predictive Models
 ### Approach
-Models Used to produce predictive dashboard are based of time series analysis due to the nature of that data coming in. Data involving inventory changes day to day, week to week, and month to month basedon the amount of patients as well as the types of procedures a certain hospital hands on on regular or irregular basis. This leave the data open to a number of Autoregressive models as well as deep learning approaches such Long Term Short Term Memory (LSTM for brevity) networks. Clustering algorithms are used to group hospitals into categories based on multivariate analysis of of combination of:
+Models Used to produce predictive dashboard are based of time series analysis due to the nature of that data coming in. Data involving inventory changes day to day, week to week, and month to month based on the amount of patients, as well as the types of procedures a certain hospital handles on a regular or irregular basis. This leaves the data open to a number of Autoregressive models as well as deep learning approaches such Long Term Short Term Memory (LSTM) networks. Clustering algorithms are used to group hospitals into categories based on multivariate analysis of of combination of:
 
  - location of a hospital's resources
  - Prior date inventories
